@@ -45,7 +45,7 @@
   </header>
 
 
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/me2.jpg)">
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/me1.jpg)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
@@ -56,6 +56,16 @@
       </div>
     </div>
   </div>
+
+  <script>
+    let imgDiv = document.querySelector("#hero")
+
+    if (window.innerWidth > window.innerHeight) {
+      imgDiv.style["background-image"] = "url(assets/img/me1.jpg)";
+    } else {
+      imgDiv.style["background-image"] = "url(assets/img/me2.jpg)";
+    }
+  </script>
   
 
   <main id="main">
@@ -71,7 +81,9 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <img src="assets/img/me1.JPG" class="img-fluid rounded b-shadow-a" alt="">
+                        <img src="assets/img/me2.JPG" class="img-fluid b-shadow-a" alt="Portrait of Saif Ali" 
+                          style="border-radius: 35px; max-height: 350px;"
+                        >
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-7">
@@ -110,7 +122,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">
+              <h3 class="title-a text-danger">
                 Services
               </h3>
               <p class="subtitle-a">
@@ -192,8 +204,8 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
+              <h3 class="title-a text-danger">
+                PROJECTS
               </h3>
               <p class="subtitle-a">
                 Projects I am working on:
